@@ -46,13 +46,22 @@ describe("FizzBuzz", function() {
         expect(result).toEqual('Fizz');
     });
 
-    it("gives fizz when the value multiples 3", function() {
+    it("gives buzz when the value multiples 5", function() {
 
         const value = 10;
 
         const result = fizzBuzz(value)
 
         expect(result).toEqual('Buzz');
+    });
+
+    it("gives FizzBuzz when the value multiples 5 and 3", function() {
+
+        const value = 15;
+
+        const result = fizzBuzz(value)
+
+        expect(result).toEqual('FizzBuzz');
     });
 
     function fizzBuzz(value) {
