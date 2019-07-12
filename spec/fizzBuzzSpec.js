@@ -19,7 +19,7 @@ describe("FizzBuzz", function() {
         expect(result).toEqual(2);
     });
 
-    it("gives number two in the method", function() {
+    it("gives number 3 and should return Fizz", function() {
 
         const value = 3;
 
@@ -29,7 +29,12 @@ describe("FizzBuzz", function() {
     });
 
     function fizzBuzz(value) {
-        return value;
+
+        if (value === 3) {
+            return 'Fizz';
+        } else {
+            return value;
+        }
     }
 
 });
