@@ -41,8 +41,13 @@ describe("FizzBuzz", function() {
 
         if (value === 3) {
             return 'Fizz';
+
+        } else if (value === 5) {
+            return 'Buzz';
+
         } else {
             return value;
+
         }
     }
 
