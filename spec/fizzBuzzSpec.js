@@ -10,6 +10,15 @@ describe("FizzBuzz", function() {
         expect(result).toEqual(1);
     });
 
+    it("gives number two in the method", function() {
+
+        const value = 1;
+
+        const result = fizzBuzz()
+
+        expect(result).toEqual(2);
+    });
+
     function fizzBuzz() {
         return 1;
     }
