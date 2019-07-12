@@ -28,6 +28,15 @@ describe("FizzBuzz", function() {
         expect(result).toEqual('Fizz');
     });
 
+    it("gives number 5 and should return Buzz", function() {
+
+        const value = 5;
+
+        const result = fizzBuzz(value)
+
+        expect(result).toEqual('Buzz');
+    });
+
     function fizzBuzz(value) {
 
         if (value === 3) {
