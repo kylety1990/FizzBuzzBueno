@@ -1,16 +1,17 @@
 describe("FizzBuzz", function() {
 
 
-    it("should be able to play a Song", function() {
+    it("gives number one in the method", function() {
 
         const value = 1;
 
         const result = fizzBuzz()
 
-        //demonstrates use of custom matcher
-        expect(result).toBePlaying(1);
+        expect(result).toEqual(1);
     });
 
-
+    function fizzBuzz() {
+        return 1;
+    }
 
 });
