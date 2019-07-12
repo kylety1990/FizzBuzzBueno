@@ -37,7 +37,7 @@ describe("FizzBuzz", function() {
         expect(result).toEqual('Buzz');
     });
 
-    it("gives number 6 and should return Fizz", function() {
+    it("gives fizz when the value multiples 3", function() {
 
         const value = 6;
 
@@ -48,7 +48,7 @@ describe("FizzBuzz", function() {
 
     function fizzBuzz(value) {
 
-        if (value === 3) {
+        if (value % 3 === 0) {
             return 'Fizz';
 
         } else if (value === 5) {
